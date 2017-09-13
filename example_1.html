@@ -8,5 +8,14 @@
     <p>This is a file to test JS</p>
     <button>Click me</button>
     <script src="script.js"></script>
+    <script type="text/javascript">
+      function createHeader() {
+        var para = document.createElement('h1');
+        para.textContent = 'You clicked the other button!';
+        document.body.appendChild(para);
+      }      
+    </script>
+    <p></p>
+    <button onclick="createHeader()">Click this!</button>
   </body>
 </html>
